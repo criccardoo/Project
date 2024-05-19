@@ -1,5 +1,5 @@
 package Entity;
-
+/*Corrado lecca ciole*/
 import java.util.ArrayList;
 
 public class EntityClienteRegistrato {
