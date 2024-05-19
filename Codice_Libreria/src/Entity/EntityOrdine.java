@@ -1,5 +1,6 @@
 package Entity;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class EntityOrdine {
@@ -15,10 +16,15 @@ public class EntityOrdine {
     private Date dataConsegna;
 
     private Stato stato;
+    
+    
+    //Aggiungo collegamento con cliente registrato 
+    private int idClienteRegistrato;
+    private ArrayList<Integer> listaIdQuantita;
 
     /* Definizione il costruttore */
 
-    public EntityOrdine(int identificativoOrdine, float prezzoTotale, Date dataAcquisto, Date dataConsegna) {
+    public EntityOrdine(int identificativoOrdine, float prezzoTotale, Date dataAcquisto, Date dataConsegna, int idClienteRegistrato) {
 
         this.identificativoOrdine=identificativoOrdine;
 
@@ -29,6 +35,8 @@ public class EntityOrdine {
         this.dataConsegna=dataConsegna;
 
         this.stato=Stato.IN_CORSO;
+        
+        this.idClienteRegistrato = idClienteRegistrato;
     }
 
     /* Definizione i metodi */
@@ -92,5 +100,16 @@ public class EntityOrdine {
         this.stato=stato;
         
     }
+    
+    public int getIdClienteRegistrato() {
+    	
+    	return this.idClienteRegistrato;
+    	
+    }
 
+    public void setIdClienteRegistrato(int idClienteRegistrato) {
+    	
+    	this.idClienteRegistrato=idClienteRegistrato;
+    	
+    }
 }

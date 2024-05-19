@@ -12,6 +12,7 @@ public class EntityDipendente{
 	private String username;
 	private String password;
 	
+	
 	public EntityDipendente(String nome,String cognome,Date dataNascita, String residenza, String username, String password) {
 		
 		super();  //chiamo il costruttore di superclasse

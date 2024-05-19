@@ -14,9 +14,9 @@ public class EntityLibro{
 	
 	protected float prezzo;
 	
-	protected boolean disponibilitaLibro;
+	protected boolean disponibileInArchivio;
 	
-	public EntityLibro (String titolo, String autore, String casaEditrice, int codiceISBN, String genere, float prezzo, boolean disponibilitaLibro){
+	public EntityLibro (String titolo, String autore, String casaEditrice, int codiceISBN, String genere, float prezzo, boolean disponibileInArchivio){
 		
 		super();
 		this.titolo=titolo;
@@ -25,7 +25,7 @@ public class EntityLibro{
 		this.codiceISBN=codiceISBN;
 		this.genere=genere;
 		this.prezzo=prezzo;
-		this.disponibilitaLibro=disponibilitaLibro;
+		this.disponibileInArchivio=disponibileInArchivio;
 		
 	}
 	
@@ -112,16 +112,16 @@ public class EntityLibro{
 	}
 	
 	
-	public boolean getDisponibiltaLibro() {
+	public boolean getDisponibileInArchivio() {
 		
-		return this.disponibilitaLibro;
+		return this.disponibileInArchivio;
 		
 	}
 	
 	
-	public void setDisponibilitaLibro(boolean disponibilitaLibro) {
+	public void setDisponibileInArchivio(boolean disponibilitaLibro) {
 		
-		this.disponibilitaLibro=disponibilitaLibro;
+		this.disponibileInArchivio=disponibilitaLibro;
 		
 	}
 	

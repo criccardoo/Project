@@ -1,5 +1,7 @@
 package Entity;
-/*Prova funzione*/
+
+import java.util.ArrayList;
+
 public class EntityClienteRegistrato {
 
     /* Definizione delle variabili */
@@ -11,7 +13,12 @@ public class EntityClienteRegistrato {
     private String indirizzoEmail;
 
     private String indirizzoSpedizione;
-
+    
+    
+    //Aggiungo il collegamento con Ordini
+    private ArrayList<Integer> listaIdOrdini;
+    private ArrayList<Integer> lListaIdDownload;
+    
     /* Definizione del costruttore */
 
     public EntityClienteRegistrato(String username, String password, String indirizzoEmail, String indirizzoSpedizione) {
@@ -25,7 +32,7 @@ public class EntityClienteRegistrato {
         this.indirizzoEmail=indirizzoEmail;
 
         this.indirizzoSpedizione=indirizzoSpedizione;
-
+        
     }
 
     /* Definizione dei metodi */

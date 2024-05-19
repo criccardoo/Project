@@ -1,5 +1,6 @@
 package Entity;
 
+
 public class EntityLibroCartaceo extends EntityLibro{
 	
 	
