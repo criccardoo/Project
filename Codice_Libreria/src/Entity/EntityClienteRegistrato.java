@@ -1,5 +1,5 @@
 package Entity;
-
+/*Prova funzione*/
 public class EntityClienteRegistrato {
 
     /* Definizione delle variabili */
