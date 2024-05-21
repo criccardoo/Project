@@ -16,7 +16,6 @@ public class EntityClienteRegistrato {
     
     
     //Aggiungo il collegamento con Ordini
-    //Prova vs
     private ArrayList<Integer> listaIdOrdini;
     private ArrayList<Integer> lListaIdDownload;
     
